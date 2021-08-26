@@ -27,7 +27,7 @@ const ListContent = () => {
         <Card>
           <Card.Body>
             <Card.Title>제목</Card.Title>
-            <Card.Text>내용내용내용내용내용내용</Card.Text>
+            <Card.Text>내용내용내용내용내용</Card.Text>
             <Link to="/" className="btn btn-primary">
               내용보기
             </Link>
