@@ -1,6 +1,9 @@
+import Dropdown from "react-bootstrap/Dropdown";
 import {
   Button,
+  ButtonGroup,
   Container,
+  DropdownButton,
   Form,
   FormControl,
   Nav,
@@ -24,27 +27,88 @@ const Header = () => {
           EZCOM
         </Link>
         <Navbar.Collapse className="justify-content-center">
-          <Link to="/home" className="navbar-brand">
-            메뉴링크1
-          </Link>
-          <Link to="link-1" className="navbar-brand">
-            메뉴링크2
-          </Link>
-          <Link to="link-1" className="navbar-brand">
-            메뉴링크3
-          </Link>
-          <Link to="link-1" className="navbar-brand">
-            메뉴링크3
-          </Link>
+          <DropdownButton
+            className="btn btn-dark"
+            variant="secondary"
+            title="서버"
+          >
+            <Link to="/" className="dropdown-item">
+              링크1
+            </Link>
+            <Link to="/" className="dropdown-item">
+              링크2
+            </Link>
+            <Link to="/" className="dropdown-item">
+              링크3
+            </Link>
+            <Link to="/" className="dropdown-item">
+              링크4
+            </Link>
+          </DropdownButton>
+          <DropdownButton
+            className="btn btn-dark"
+            variant="secondary"
+            title="개발언어"
+          >
+            <Link to="/" className="dropdown-item">
+              링크1
+            </Link>
+            <Link to="/" className="dropdown-item">
+              링크2
+            </Link>
+            <Link to="/" className="dropdown-item">
+              링크3
+            </Link>
+            <Link to="/" className="dropdown-item">
+              링크4
+            </Link>
+          </DropdownButton>
+
+          <DropdownButton
+            className="btn btn-dark"
+            variant="secondary"
+            title="DB"
+          >
+            <Link to="/" className="dropdown-item">
+              링크1
+            </Link>
+            <Link to="/" className="dropdown-item">
+              링크2
+            </Link>
+            <Link to="/" className="dropdown-item">
+              링크3
+            </Link>
+            <Link to="/" className="dropdown-item">
+              링크4
+            </Link>
+          </DropdownButton>
+
+          <DropdownButton
+            className="btn btn-dark"
+            variant="secondary"
+            title="운영체제"
+          >
+            <Link to="/" className="dropdown-item">
+              링크1
+            </Link>
+            <Link to="/" className="dropdown-item">
+              링크2
+            </Link>
+            <Link to="/" className="dropdown-item">
+              링크3
+            </Link>
+            <Link to="/" className="dropdown-item">
+              링크4
+            </Link>
+          </DropdownButton>
         </Navbar.Collapse>
-        <Navbar.Collapse className="justify-content-end">
-          <Link to="link-1" className="navbar-brand">
-            로그인
-          </Link>
-          <Link to="link-1" className="navbar-brand">
-            회원가입
-          </Link>
-        </Navbar.Collapse>
+
+        <Link to="/" className="btn btn-primary btn-sm mr-2">
+          로그인
+        </Link>
+        <Link to="/" className="btn btn-primary btn-sm">
+          회원가입
+        </Link>
       </Navbar>
     </>
   );
